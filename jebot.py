@@ -132,9 +132,9 @@ async def song(client, message):
 async def song(client, message):
     cap = "@daqomods"
     url = message.text.split(None, 1)[1]
-    rkp = await message.reply("Processing...")
+    rkp = await message.reply("Biraz gözlə...")
     if not url:
-        await rkp.edit("**İstədiyiniz mahnı hansıdır?**\nUsage`/song <mahnı adı>`")
+        await rkp.edit("**İstədiyiniz mahnı hansıdır?**\nBu şəkildə yaz`/song <mahnı adı>`")
     search = SearchVideos(url, offset=1, mode="json", max_results=1)
     test = search.result()
     p = json.loads(test)
@@ -264,7 +264,7 @@ Powered by @daqomods</b>""",
     else:
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="<b>Mahnı Yükləyici, Kömək.\n\nSyntax: `/song TABOO</b>",
+               text="<b>Mahnı yükləmək üçün örnək.\n\nBunu yaz: `/song Okaber TABOO</b>",
             reply_to_message_id=message.message_id
         )     
         
