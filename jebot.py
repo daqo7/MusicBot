@@ -227,7 +227,7 @@ Necə işlədiyimi bilmək üçün yardım düyməsinə toxun.</b>""",
                                         InlineKeyboardButton(
                                             "Yardım", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/daqomods")
+                                            "Kanal", url="https://t.me/daqomods")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
