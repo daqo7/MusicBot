@@ -238,7 +238,7 @@ Necə işlədiyimi bilmək üçün yardım düyməsinə toxun.</b>""",
 
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Mahnı yükləyicisi aktiv.\n\n</b>""",   
+               text="""<b>DAQO Music aktivdir.\n\n</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
