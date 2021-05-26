@@ -56,7 +56,7 @@ async def song(client, message):
     try:
         url = q[0]["link"]
     except BaseException:
-        return await rkp.edit("Failed to find that song.")
+        return await rkp.edit("Bu musiqini tapa bilmedim.")
     type = "audio"
     if type == "audio":
         opts = {
@@ -130,7 +130,7 @@ async def song(client, message):
     
 @Jebot.on_message(filters.command("song") & ~filters.edited & filters.group)
 async def song(client, message):
-    cap = "@JEBotZ"
+    cap = "@daqomods"
     url = message.text.split(None, 1)[1]
     rkp = await message.reply("Processing...")
     if not url:
@@ -142,7 +142,7 @@ async def song(client, message):
     try:
         url = q[0]["link"]
     except BaseException:
-        return await rkp.edit("Failed to find that song.")
+        return await rkp.edit("Bu musiqini tapa bilmedim.")
     type = "audio"
     if type == "audio":
         opts = {
@@ -219,7 +219,7 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey There, I'm a Song Downloader Bot. A bot by @JEBotZ.
+               text="""<b>Hey There, I'm a Song Downloader Bot. A bot by @daqomods.
 
 Hit help button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
@@ -227,7 +227,7 @@ Hit help button to find out more about how to use me</b>""",
                                         InlineKeyboardButton(
                                             "Help", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/Infinity_BOTs")
+                                            "Channel", url="https://t.me/daqomods")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -256,9 +256,9 @@ async def help(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Send a song name to download song
+               text="""<b>Yuklemey istediyin mahnının adını yaz
 
-@JEBotZ</b>""",
+Powered by @daqomods</b>""",
             reply_to_message_id=message.message_id
         )
     else:
