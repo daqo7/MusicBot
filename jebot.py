@@ -56,7 +56,7 @@ async def song(client, message):
     try:
         url = q[0]["link"]
     except BaseException:
-        return await rkp.edit("Bu musiqini tapa bilmedim.")
+        return await rkp.edit("Bu mahnını tapa bilmədim.")
     type = "audio"
     if type == "audio":
         opts = {
@@ -134,7 +134,7 @@ async def song(client, message):
     url = message.text.split(None, 1)[1]
     rkp = await message.reply("Processing...")
     if not url:
-        await rkp.edit("**What's the song you want?**\nUsage`/song <song name>`")
+        await rkp.edit("**İstədiyiniz mahnı hansıdır?**\nUsage`/song <mahnı adı>`")
     search = SearchVideos(url, offset=1, mode="json", max_results=1)
     test = search.result()
     p = json.loads(test)
@@ -142,7 +142,7 @@ async def song(client, message):
     try:
         url = q[0]["link"]
     except BaseException:
-        return await rkp.edit("Bu musiqini tapa bilmedim.")
+        return await rkp.edit("Bu mahnını tapa bilmədim.")
     type = "audio"
     if type == "audio":
         opts = {
@@ -264,7 +264,7 @@ Powered by @daqomods</b>""",
     else:
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="<b>Song Downloader Help.\n\nSyntax: `/song guleba`</b>",
+               text="<b>Mahnı Yükləyici, Kömək.\n\nSyntax: `/song TABOO</b>",
             reply_to_message_id=message.message_id
         )     
         
