@@ -48,7 +48,7 @@ async def song(client, message):
  #dasqin #daqomods
     cap = "@daqomods"
     url = message.text
-    rkp = await message.reply("Processing...")
+    rkp = await message.reply("Biraz gözlə...")
     search = SearchVideos(url, offset=1, mode="json", max_results=1)
     test = search.result()
     p = json.loads(test)
@@ -87,27 +87,27 @@ async def song(client, message):
         await rkp.edit(f"`{str(DE)}`")
         return
     except ContentTooShortError:
-        await rkp.edit("`The download content was too short.`")
+        await rkp.edit("`Endirmə məzmunu çox qısadır.`")
         return
     except GeoRestrictedError:
         await rkp.edit(
-            "`Video is not available from your geographic location due to geographic restrictions imposed by a website.`"
+            "`Web sayt tərəfindən qoyulmuş coğrafi məhdudiyyətlər səbəbindən video yüklənə bilmir.`"
         )
         return
     except MaxDownloadsReached:
-        await rkp.edit("`Max-downloads limit has been reached.`")
+        await rkp.edit("`Maksimum yükləmə limitinə çatıldı.`")
         return
     except PostProcessingError:
-        await rkp.edit("`There was an error during post processing.`")
+        await rkp.edit("`Sonrakı işləmə zamanı bir xəta baş verdi.`")
         return
     except UnavailableVideoError:
-        await rkp.edit("`Media is not available in the requested format.`")
+        await rkp.edit("`Tələb olunan formatda media mövcud deyil.`")
         return
     except XAttrMetadataError as XAME:
         await rkp.edit(f"`{XAME.code}: {XAME.msg}\n{XAME.reason}`")
         return
     except ExtractorError:
-        await rkp.edit("`There was an error during info extraction.`")
+        await rkp.edit("`Məlumat çıxarılması zamanı xəta baş verdi.`")
         return
     except Exception as e:
         await rkp.edit(f"{str(type(e)): {str(e)}}")
