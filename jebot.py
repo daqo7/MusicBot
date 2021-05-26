@@ -45,8 +45,8 @@ Jebot = Client(
  #No bots also allowed
 @Jebot.on_message(filters.private & ~filters.bot & ~filters.command("help") & ~filters.command("start") & ~filters.command("s"))
 async def song(client, message):
- #ImJanindu #JEBotZ
-    cap = "@JEBotZ"
+ #dasqin #daqomods
+    cap = "@daqomods"
     url = message.text
     rkp = await message.reply("Processing...")
     search = SearchVideos(url, offset=1, mode="json", max_results=1)
@@ -80,7 +80,7 @@ async def song(client, message):
         }
         song = True
     try:
-        await rkp.edit("Downloading...")
+        await rkp.edit("Yüklənir...")
         with YoutubeDL(opts) as rip:
             rip_data = rip.extract_info(url)
     except DownloadError as DE:
@@ -114,7 +114,7 @@ async def song(client, message):
         return
     time.time()
     if song:
-        await rkp.edit("Uploading...") #ImJanindu
+        await rkp.edit("Sizə göndərirəm...") #dasqin
         lol = "./thumb.jpg"
         lel = await message.reply_audio(
                  f"{rip_data['id']}.mp3",
@@ -122,7 +122,7 @@ async def song(client, message):
                  title=str(rip_data["title"]),
                  performer=str(rip_data["uploader"]),
                  thumb=lol,
-                 caption=cap)  #JEBotZ
+                 caption=cap)  #daqomods
         await rkp.delete()
         os.system("rm -rf *.mp3")
         os.system("rm -rf *.webp")
@@ -166,7 +166,7 @@ async def song(client, message):
         }
         song = True
     try:
-        await rkp.edit("Downloading...")
+        await rkp.edit("Yüklənir...")
         with YoutubeDL(opts) as rip:
             rip_data = rip.extract_info(url)
     except DownloadError as DE:
@@ -200,7 +200,7 @@ async def song(client, message):
         return
     time.time()
     if song:
-        await rkp.edit("Uploading...") #ImJanindu
+        await rkp.edit("Sizə göndərirəm...") #dasqin
         lol = "./thumb.jpg"
         lel = await message.reply_audio(
                  f"{rip_data['id']}.mp3",
@@ -208,7 +208,7 @@ async def song(client, message):
                  title=str(rip_data["title"]),
                  performer=str(rip_data["uploader"]),
                  thumb=lol,
-                 caption=cap)  #JEBotZ
+                 caption=cap)  #daqomods
         await rkp.delete()
         os.system("rm -rf *.mp3")
         os.system("rm -rf *.webp")
@@ -219,13 +219,13 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey There, I'm a Song Downloader Bot. A bot by @daqomods.
+               text="""<b>SALAM, mən mahnı yükləməyə kömək edən bir botam. Botun müəllifi @daqomods.
 
-Hit help button to find out more about how to use me</b>""",   
+Necə işlədiyimi bilmək üçün yardım düyməsinə toxun.</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Help", callback_data="help"),
+                                            "Yardım", callback_data="help"),
                                         InlineKeyboardButton(
                                             "Channel", url="https://t.me/daqomods")
                                     ]]
@@ -238,11 +238,11 @@ Hit help button to find out more about how to use me</b>""",
 
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Song Downloader Is Online.\n\n</b>""",   
+               text="""<b>Mahnı yükləyicisi aktiv.\n\n</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Help", callback_data="help")
+                                            "Yardım", callback_data="help")
                                         
                                     ]]
                             ),        
@@ -256,7 +256,7 @@ async def help(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Yuklemey istediyin mahnının adını yaz
+               text="""<b>Yükləmək istədiyin mahnının adını yaz.
 
 Powered by @daqomods</b>""",
             reply_to_message_id=message.message_id
@@ -280,7 +280,7 @@ print(
     """
 Bot Started!
 
-Join @Infinity_BOTs
+Join @daqomods
 """
 )
 
