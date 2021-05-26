@@ -1,6 +1,6 @@
 # Telegram Song Download Bot ❤
 
-## You can download any song using this bot. Can be found in telegram as [@JESongBot](https://t.me/JESongBot)
+## You can download any song using this bot. Can be found in telegram as [@mahniyukle](https://t.me/mahniyuklebot)
 
 ### Commands:
 - In Groups - `/song <song name>`
@@ -8,16 +8,16 @@
 
 ### Deploy to Heroku 🏃‍♂
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ImJanindu/Songdl-tgbot)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/daqo7/MusicBot)
 
 ### Credits:
 
-- [Infinity BOTs](https://t.me/Infinity_BOTs)
+- [DAQO BOTs](https://t.me/daqomods)
 
 - [Pyrogram Library](https://github.com/pyrogram/pyrogram)
 
 ### Developers:
 
-- [@ImJanindu](https://t.me/ImJanindu)
+- [@dasqinnagiyev](https://Instagram.com/dasqinnagiyev)
 
-- [@InukaASiTH](https://t.me/InukaASiTH)
+
