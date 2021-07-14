@@ -1,14 +1,14 @@
-# Telegram Song Download Bot ❤
+# Telegram Mahnı Yükləmə Botu ❤
 
-## You can download any song using this bot. Can be found in telegram as [@mahniyukle](https://t.me/mahniyuklebot)
+## Bu botdan istifadə edərək istənilən mahnını yükləyə bilərsiniz. Telegramda olduğu kimi tapa bilərsiniz [@mahniyuklebot](https://t.me/mahniyuklebot)
 
-### Commands:
-- In Groups - `/song <song name>`
-- In Private - Just send song name
+### Komandalar:
+- Gruplarda - `/song <mahnı adı>`
+- Şəxsi mesaj - Mahnı adını yazın
 
-### Deploy to Heroku 🏃‍♂
+### Deploy Heroku 🏃‍♂
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/daqo7/MusicBot)
+[![Deploy Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/daqo7/MusicBot)
 
 ### Credits:
 
@@ -16,8 +16,8 @@
 
 - [Pyrogram Library](https://github.com/pyrogram/pyrogram)
 
-### Developers:
+### Gəliştirici:
 
-- [@dasqinnagiyev](https://Instagram.com/dasqinnagiyev)
+- [@dasqinnagiyev](https://instagram.com/dasqinnagiyev)
 
 
