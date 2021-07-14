@@ -1,4 +1,4 @@
-#    Copyright (c) 2021 Infinity BOTs <https://t.me/Infinity_BOTs>
+#    Copyright (c) 2021 DAQO BOTs <https://t.me/daqomods>
  
 #    This program is free software: you can redistribute it and/or modify  
 #    it under the terms of the GNU General Public License as published by  
@@ -46,7 +46,7 @@ Jebot = Client(
 @Jebot.on_message(filters.private & ~filters.bot & ~filters.command("help") & ~filters.command("start") & ~filters.command("s"))
 async def song(client, message):
  #dasqin #daqomods
-    cap = "@daqomods"
+    cap = "Xoş dinləmələr baby."
     url = message.text
     rkp = await message.reply("Biraz gözlə...")
     search = SearchVideos(url, offset=1, mode="json", max_results=1)
