@@ -1,27 +1,27 @@
 {
-    "name": "Song Downloader Bot",
-    "description": "A bot that can download song you want.",
-    "logo": "https://telegra.ph/file/4501aa5bd83bdcefa658d.jpg",
+    "name": "Mahnı yükləyici Bot",
+    "description": "İstədiyiniz mahnını yükləyə bilən bir bot.",
+    "logo": "https://telegra.ph/file/e6d66e4f89c44b7884f38.jpg",
     "keywords": [
         "Music",
         "Songdl",
         "Telegram Bot",
-        "JE Bots"
+        "DAQO Bots"
     ],
-    "website": "https://infinityje.com",
+    "website": "https://instagram.com/dasqinnagiyev",
     "repository": "https://github.com/daqo7/MusicBot",
     "success_url": "https://t.me/daqomods",
     "env": {
         "TG_BOT_TOKEN": {
-            "description": "You Telegram Bot Token from @BotFather",
+            "description": "Botunuzun tokeni @BotFather",
             "value": ""
         },
         "API_HASH": {
-            "description": "Your API Hash from my.telegram.org",
+            "description": "API Hash my.telegram.org",
             "value": ""
         },
         "APP_ID": {
-            "description": "Your APP ID from my.telegram.org",
+            "description": "APP ID my.telegram.org",
             "value": ""
         }
     },
